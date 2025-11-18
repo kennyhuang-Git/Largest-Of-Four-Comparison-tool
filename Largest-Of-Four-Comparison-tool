@@ -1,0 +1,13 @@
+# Simply insert 4 inputs into the 4 respective parameters and the script will return to you the largest of the four integers/parameters.
+def largestOfFour(a,b,c,d):
+    if a<b<c < d or a<c<b < d or c<a<b < d or c<b<a < d or b<c<a < d or b<a<c < d:
+        largestOfFour = d
+    if b<c<d < a or b<d<c < a or c<d<b < a or c<b<d or d<c<b or d<b<c < a:
+        largestOfFour = a
+    if a<d<c < b or a<c<d < b or c<a<d < b or c<d<a < b or d<c<a < b or d<a<c < b:
+        largestOfFour = b
+    if b<a<d < c or b<d<a < c or a<b<d < c or a<d<b < c or d<b<a < c or d<a<b < c:
+        largestOfFour = c
+    if a + b + c + d == 0:
+        largestOfFour = 0 
+    return largestOfFour
